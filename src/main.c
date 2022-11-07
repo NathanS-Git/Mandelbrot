@@ -151,7 +151,7 @@ int main(int argc, char* args[]) {
                         case SDLK_ESCAPE:
                             quit = 1;
                             break;
-                        case SDLK_F12:
+                        case SDLK_F12: ;
                             SDL_Surface *screen_shot = SDL_CreateRGBSurface(SDL_SWSURFACE, SCREEN_WIDTH, SCREEN_HEIGHT, 24, 0x000000FF, 0x0000FF00, 0x00FF0000, 0);
                             glReadPixels(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, GL_RGB, GL_UNSIGNED_BYTE, screen_shot->pixels);
                             SDL_SaveBMP(screen_shot, "screenshot.bmp");
