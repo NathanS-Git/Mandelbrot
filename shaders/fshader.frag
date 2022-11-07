@@ -29,7 +29,7 @@ float mandelbrot_smooth_iteration_count(in vec2 c) {
         iteration += 1;
     }
     if (iteration == max_iteration) {
-        return 0;
+        return 0.0;
     }
 
     float smooth_i = iteration - log2(log2(dot(z,z))) + 4.0;
@@ -56,4 +56,5 @@ void main() {
 
     
     FragColour = vec4(colour, 1.0);
+
 }
