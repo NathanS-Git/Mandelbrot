@@ -21,3 +21,7 @@ Zoomed in portions of the mandelbrot
 ![Single pendulum system](docs/mandelbrot_3.bmp)
 
 ![Single pendulum system](docs/mandelbrot_4.bmp)
+
+## Requirements
+binutils
+libsdl2-dev
